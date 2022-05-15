@@ -9,6 +9,8 @@ class TestEnvironment(unittest.TestCase):
         unittest = importlib.import_module('unittest')
         dotenv = importlib.import_module('dotenv')
         twocaptcha = importlib.import_module('twocaptcha')
+        pillow = importlib.import_module('pillow')
+        jupyter = importlib.import_module('jupyter')
 
         self.assertTrue(bs4, 'bs4 is not installed')
         self.assertTrue(requests, 'requests is not installed')
@@ -16,6 +18,8 @@ class TestEnvironment(unittest.TestCase):
         self.assertTrue(unittest, 'unittest is not installed')
         self.assertTrue(dotenv, 'dotenv is not installed')
         self.assertTrue(twocaptcha, 'twocaptcha is not installed')
+        self.assertTrue(pillow, 'pillow is not installed')
+        self.assertTrue(jupyter, 'jupyter is not installed')
 
     @unittest.skip('This test is not implemented yet')
     def test_selenium_local_is_up_and_running(self):
