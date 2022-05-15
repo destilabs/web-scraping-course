@@ -42,6 +42,11 @@ $ pip install -r requirements.txt
 
 [Course requires Docker to be installed](https://docs.docker.com/engine/install/) 
 
+```sh
+$ docker pull selenium/standalone-chrome
+$ docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-chrome
+```
+
 ## Verify Installation
 ```sh
 $ python -m unittest
