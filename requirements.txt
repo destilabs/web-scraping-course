@@ -4,3 +4,4 @@ pandas==1.1.5
 2captcha-python==1.1.2
 python-dotenv==0.20.0
 Pillow==8.4.0
+requests==2.27.1
