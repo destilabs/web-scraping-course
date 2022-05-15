@@ -43,3 +43,6 @@ $ pip install -r requirements.txt
 [Course requires Docker to be installed](https://docs.docker.com/engine/install/) 
 
 ## Verify Installation
+```sh
+$ python -m unittest
+```
