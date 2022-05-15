@@ -12,11 +12,7 @@ if __name__ == "__main__":
     driver = get_local_safe_setup()
 
     driver.get("https://quotes.toscrape.com/")
-
-    WebDriverWait(driver, 5).until(
-         lambda driver: driver.find_element(By.CLASS_NAME, "quote")
-    )
-
+    
     # Cookie management
     if os.path.exists("cookies.json"):
         with open("cookies.json", "r") as f:
@@ -29,12 +25,15 @@ if __name__ == "__main__":
             json.dump(cookies, f)
 
     driver.get("https://quotes.toscrape.com/")
-    
+    WebDriverWait(driver, 5).until(
+         lambda driver: driver.find_element(By.CLASS_NAME, "quote")
+    )
+
     try:
         assert(driver.find_element(By.LINK_TEXT, "Logout").is_displayed())
         print('Login successful!')
     except NoSuchElementException:
         print('Login failed!')
-
+    
     # Quit driver
     driver.quit()
