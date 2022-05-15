@@ -1,4 +1,4 @@
-# Promedium
+# Udemy Scraping Course
 ## _Repository for Udemy Course_
 
 ## Tutorials
