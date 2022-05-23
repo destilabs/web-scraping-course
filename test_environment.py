@@ -9,7 +9,7 @@ class TestEnvironment(unittest.TestCase):
         unittest = importlib.import_module('unittest')
         dotenv = importlib.import_module('dotenv')
         twocaptcha = importlib.import_module('twocaptcha')
-        pillow = importlib.import_module('pillow')
+        pillow = importlib.import_module('PIL')
         jupyter = importlib.import_module('jupyter')
 
         self.assertTrue(bs4, 'bs4 is not installed')
