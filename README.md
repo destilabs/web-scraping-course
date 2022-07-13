@@ -1,5 +1,6 @@
 # Udemy Scraping Course
 ## _Repository for Udemy Course_
+https://www.udemy.com/course/practical-web-scraping-course/
 
 ## Tutorials
 
